@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Solutions — IT Partner</title>
+  <meta name="description" content="Comprehensive enterprise IT solutions: Cloud, Security, Data, Networks, DevOps and Consulting." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>body { opacity: 0; }</style>
+</head>
+<body>
+
+<!-- ═══ NAVBAR ═══ -->
+<nav class="navbar-custom navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <span class="brand-dot"></span>it <span>partner</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMain">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-1 py-3 py-lg-0">
+        <li class="nav-item"><a class="nav-link-custom" href="index.html">Solutions ↓</a></li>
+        <li class="nav-item"><a class="nav-link-custom active" href="services.html">Services ↓</a></li>
+        <li class="nav-item"><a class="nav-link-custom" href="index.html#pricing">Pricing</a></li>
+        <li class="nav-item"><a class="nav-link-custom" href="index.html#company">Company ↓</a></li>
+        <li class="nav-item"><a class="nav-link-custom" href="contact.html">Contact</a></li>
+        <li class="nav-item ms-lg-2"><a class="nav-link-custom" href="#">Login</a></li>
+        <li class="nav-item ms-lg-1"><a class="nav-link-custom nav-cta" href="contact.html">Login →</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ═══ PAGE HERO ═══ -->
+<section class="page-hero">
+  <div class="container position-relative">
+    <div class="breadcrumb-custom">
+      <a href="index.html">Home</a>
+      <span class="sep">/</span>
+      <span class="current">Our Solutions</span>
+    </div>
+    <div class="row align-items-center">
+      <div class="col-lg-8">
+        <div class="page-hero-badge">🔧 Enterprise Services</div>
+        <h1>Our Solutions</h1>
+        <p>Comprehensive enterprise IT services designed to scale with your business. From cloud infrastructure to advanced cybersecurity, we deliver end-to-end technology partnerships.</p>
+      </div>
+      <div class="col-lg-4 d-none d-lg-flex justify-content-end">
+        <div style="display:flex;gap:12px;flex-wrap:wrap;max-width:220px">
+          <div style="background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);border-radius:12px;padding:16px;text-align:center;width:96px;">
+            <div style="font-size:1.8rem;margin-bottom:6px">☁️</div>
+            <div style="font-size:.72rem;color:rgba(255,255,255,.6);font-weight:600">Cloud</div>
+          </div>
+          <div style="background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);border-radius:12px;padding:16px;text-align:center;width:96px;">
+            <div style="font-size:1.8rem;margin-bottom:6px">🛡️</div>
+            <div style="font-size:.72rem;color:rgba(255,255,255,.6);font-weight:600">Security</div>
+          </div>
+          <div style="background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);border-radius:12px;padding:16px;text-align:center;width:96px;">
+            <div style="font-size:1.8rem;margin-bottom:6px">🗄️</div>
+            <div style="font-size:.72rem;color:rgba(255,255,255,.6);font-weight:600">Data</div>
+          </div>
+          <div style="background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);border-radius:12px;padding:16px;text-align:center;width:96px;">
+            <div style="font-size:1.8rem;margin-bottom:6px">🌐</div>
+            <div style="font-size:.72rem;color:rgba(255,255,255,.6);font-weight:600">Networks</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FILTER TABS ═══ -->
+<section style="background:var(--gray-50);border-bottom:1px solid var(--gray-200);padding:20px 0;">
+  <div class="container">
+    <div class="d-flex gap-2 flex-wrap">
+      <button class="btn-blue-outline active" style="background:var(--blue-mid);color:white;border-color:var(--blue-mid)">All Services</button>
+      <button class="btn-blue-outline" onclick="filterServices(this,'infrastructure')">Infrastructure</button>
+      <button class="btn-blue-outline" onclick="filterServices(this,'security')">Security</button>
+      <button class="btn-blue-outline" onclick="filterServices(this,'data')">Data & Analytics</button>
+      <button class="btn-blue-outline" onclick="filterServices(this,'consulting')">Consulting</button>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ SERVICES GRID ═══ -->
+<section class="section-pad" style="background:var(--gray-50)">
+  <div class="container">
+    <!-- Row 1 -->
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-3 reveal" data-category="infrastructure">
+        <div class="service-card" data-service-link="service-detail.html">
+          <div class="sc-icon">☁️</div>
+          <h4>Cloud</h4>
+          <p>Centralised cloud data platform and enterprise scale infrastructure solutions with seamless migration paths.</p>
+          <ul>
+            <li>Services Cost-Reduction</li>
+            <li>Data Compliance</li>
+            <li>Data Migration</li>
+          </ul>
+          <a href="service-detail.html" class="btn-blue-outline">Details →</a>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3 reveal reveal-delay-1" data-category="security">
+        <div class="service-card" data-service-link="service-detail.html">
+          <div class="sc-icon">🛡️</div>
+          <h4>Security</h4>
+          <p>Secure cloud data solutions and enterprise-grade infrastructure protection with continuous monitoring.</p>
+          <ul>
+            <li>Threat Assessment</li>
+            <li>Data Monitoring</li>
+            <li>Breach Containment</li>
+          </ul>
+          <a href="service-detail.html" class="btn-blue-outline">Details →</a>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3 reveal reveal-delay-2" data-category="data">
+        <div class="service-card" data-service-link="service-detail.html">
+          <div class="sc-icon">🗄️</div>
+          <h4>Data</h4>
+          <p>Centralised databases of contemporary data with advanced analytics and real-time processing pipelines.</p>
+          <ul>
+            <li>Data Governance</li>
+            <li>Data Intelligence</li>
+            <li>Data Integration</li>
+          </ul>
+          <a href="service-detail.html" class="btn-blue-outline">Details →</a>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3 reveal reveal-delay-3" data-category="infrastructure">
+        <div class="service-card" data-service-link="service-detail.html">
+          <div class="sc-icon">🌐</div>
+          <h4>Networks</h4>
+          <p>Centralised network infrastructure optimised for enterprise performance, low latency and high availability.</p>
+          <ul>
+            <li>Core Consulting</li>
+            <li>Core Streamlining</li>
+            <li>Optimisation</li>
+          </ul>
+          <a href="service-detail.html" class="btn-blue-outline">Details →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Row 2 -->
+    <div class="row g-4 mt-1">
+      <div class="col-md-6 col-lg-3 reveal" data-category="infrastructure">
+        <div class="service-card" data-service-link="service-detail.html">
+          <div class="sc-icon">🔗</div>
+          <h4>Networks+</h4>
+          <p>Communications network and advanced managed services for modern distributed enterprise environments.</p>
+          <ul>
+            <li>Service Features</li>
+            <li>Resolution Dynamics</li>
+            <li>Optimisation</li>
+            <li>Consulting Consultation</li>
+          </ul>
+          <a href="service-detail.html" class="btn-blue-outline">Details →</a>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3 reveal reveal-delay-1" data-category="infrastructure">
+        <div class="service-card" data-service-link="service-detail.html">
+          <div class="sc-icon">⚙️</div>
+          <h4>DevOps</h4>
+          <p>Secure cloud solutions for balance services — modern CI/CD automation and infrastructure as code.</p>
+          <ul>
+            <li>Security Simulation</li>
+            <li>Core Analytics</li>
+            <li>Structured Consultation</li>
+            <li>Dev/Ops Blackboard</li>
+          </ul>
+          <a href="service-detail.html" class="btn-blue-outline">Details →</a>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3 reveal reveal-delay-2" data-category="consulting">
+        <div class="service-card" data-service-link="service-detail.html">
+          <div class="sc-icon">💼</div>
+          <h4>Consulting</h4>
+          <p>Secure cloud solutions and enterprise-grade IT consulting for business transformation initiatives.</p>
+          <ul>
+            <li>Serviced Analysis</li>
+            <li>Structured Dynamics</li>
+            <li>Network Consultation</li>
+            <li>Dev/Ops Blackboard</li>
+          </ul>
+          <a href="service-detail.html" class="btn-blue-outline">Details →</a>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3 reveal reveal-delay-3" data-category="consulting">
+        <div class="service-card" data-service-link="service-detail.html">
+          <div class="sc-icon">🤝</div>
+          <h4>Consulting+</h4>
+          <p>Secure consultations across infrastructure and technology with dedicated long-term partnership models.</p>
+          <ul>
+            <li>Serviced Analysis</li>
+            <li>Structured Dynamics</li>
+            <li>Network Consultation</li>
+            <li>Dev/Ops Blackboard</li>
+          </ul>
+          <a href="service-detail.html" class="btn-blue-outline">Details →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ STATS ═══ -->
+<section style="background:var(--navy);padding:64px 0;">
+  <div class="container">
+    <div class="row g-4 text-center">
+      <div class="col-6 col-lg-3 reveal">
+        <div class="hero-stat-num" data-counter="500" data-suffix="+">0+</div>
+        <div style="font-size:.88rem;color:rgba(255,255,255,.5);margin-top:6px;">Enterprise Clients</div>
+      </div>
+      <div class="col-6 col-lg-3 reveal reveal-delay-1">
+        <div class="hero-stat-num" data-counter="99" data-suffix=".9%">0%</div>
+        <div style="font-size:.88rem;color:rgba(255,255,255,.5);margin-top:6px;">Uptime SLA</div>
+      </div>
+      <div class="col-6 col-lg-3 reveal reveal-delay-2">
+        <div class="hero-stat-num" data-counter="12" data-suffix="yr">0yr</div>
+        <div style="font-size:.88rem;color:rgba(255,255,255,.5);margin-top:6px;">Years Experience</div>
+      </div>
+      <div class="col-6 col-lg-3 reveal reveal-delay-3">
+        <div class="hero-stat-num" data-counter="50" data-suffix="+">0+</div>
+        <div style="font-size:.88rem;color:rgba(255,255,255,.5);margin-top:6px;">Expert Engineers</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CTA ═══ -->
+<section class="cta-banner">
+  <div class="container position-relative">
+    <div class="row align-items-center justify-content-between g-4">
+      <div class="col-lg-7 reveal">
+        <div class="section-label section-label-white" style="display:inline-flex"><span class="dot"></span>Ready to Begin</div>
+        <h2>Find the Right Solution for Your Business</h2>
+        <p>Our enterprise consultants will help you identify the optimal service combination for your needs.</p>
+      </div>
+      <div class="col-lg-4 reveal reveal-delay-2 text-lg-end">
+        <a href="contact.html" class="btn-primary-custom">Schedule Consultation →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FOOTER ═══ -->
+<footer class="footer">
+  <div class="container">
+    <div class="row g-4 g-lg-5">
+      <div class="col-lg-4">
+        <div class="footer-brand">it <span>partner</span></div>
+        <p class="footer-desc">Empowering enterprises with comprehensive IT solutions, security services, and strategic technology partnerships since 2012.</p>
+        <div class="footer-social">
+          <div class="social-btn">in</div>
+          <div class="social-btn">𝕏</div>
+          <div class="social-btn">gh</div>
+          <div class="social-btn">yt</div>
+        </div>
+      </div>
+      <div class="col-6 col-lg-2">
+        <div class="footer-heading">Solutions</div>
+        <a class="footer-link" href="services.html">Cloud</a>
+        <a class="footer-link" href="services.html">Security</a>
+        <a class="footer-link" href="services.html">Data</a>
+        <a class="footer-link" href="services.html">Networks</a>
+        <a class="footer-link" href="services.html">DevOps</a>
+      </div>
+      <div class="col-6 col-lg-2">
+        <div class="footer-heading">Company</div>
+        <a class="footer-link" href="#">About Us</a>
+        <a class="footer-link" href="#">Careers</a>
+        <a class="footer-link" href="#">Blog</a>
+        <a class="footer-link" href="#">Press</a>
+        <a class="footer-link" href="contact.html">Contact</a>
+      </div>
+      <div class="col-6 col-lg-2">
+        <div class="footer-heading">Resources</div>
+        <a class="footer-link" href="#">Documentation</a>
+        <a class="footer-link" href="#">Case Studies</a>
+        <a class="footer-link" href="#">White Papers</a>
+        <a class="footer-link" href="#">Webinars</a>
+        <a class="footer-link" href="#">Status Page</a>
+      </div>
+      <div class="col-6 col-lg-2">
+        <div class="footer-heading">Legal</div>
+        <a class="footer-link" href="#">Privacy Policy</a>
+        <a class="footer-link" href="#">Terms of Service</a>
+        <a class="footer-link" href="#">SLA Agreement</a>
+        <a class="footer-link" href="#">Security</a>
+        <a class="footer-link" href="#">Compliance</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copy">© 2025 IT Partner. All rights reserved.</div>
+      <div class="footer-copy">🌍 Global Enterprise IT Solutions</div>
+    </div>
+  </div>
+</footer>
+
+<button class="back-top" aria-label="Back to top">↑</button>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+<script>
+function filterServices(btn, category) {
+  // Update active button
+  document.querySelectorAll('.btn-blue-outline').forEach(b => {
+    b.style.background = '';
+    b.style.color = '';
+    b.style.borderColor = '';
+  });
+  btn.style.background = 'var(--blue-mid)';
+  btn.style.color = 'white';
+  btn.style.borderColor = 'var(--blue-mid)';
+
+  // Filter cards
+  document.querySelectorAll('[data-category]').forEach(col => {
+    col.style.display = (category === 'all' || col.dataset.category === category) ? '' : 'none';
+  });
+}
+</script>
+</body>
+</html>
